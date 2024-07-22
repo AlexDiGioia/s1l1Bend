@@ -11,10 +11,11 @@ public class Es3 {
         if (pariDispari(evenOrOdd))
             System.out.println(evenOrOdd + " è dispari");
         System.out.println(evenOrOdd + " è pari");
+        System.out.println("Perimetro Triangolo: " + perimetroTriangolo(x, y, z));
     }
 
     public static double perimetroRettangolo(double b, double h) {
-        return b * h;
+        return (b + h) * 2;
     }
 
     public static boolean pariDispari(int n) {
