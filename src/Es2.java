@@ -13,5 +13,6 @@ public class Es2 {
 
         System.out.println("Stringhe inserite: " + s1 + ", " + s2 + ", " + s3);
         System.out.println("Ordine Inverso: " + s3 + ", " + s2 + ", " + s1);
+        scanner.close();
     }
 }

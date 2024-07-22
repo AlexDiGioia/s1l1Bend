@@ -11,7 +11,7 @@ public class Es3 {
         if (pariDispari(evenOrOdd))
             System.out.println(evenOrOdd + " è dispari");
         System.out.println(evenOrOdd + " è pari");
-        System.out.println("Perimetro Triangolo: " + perimetroTriangolo(x, y, z));
+        System.out.println("Area Triangolo: " + areaTriangolo(x, y, z));
     }
 
     public static double perimetroRettangolo(double b, double h) {
@@ -22,7 +22,7 @@ public class Es3 {
         return n % 2 == 1;
     }
 
-    public static double perimetroTriangolo(double l1, double l2, double l3) {
+    public static double areaTriangolo(double l1, double l2, double l3) {
         double p = (l1 + l2 + l3) / 2;
         return Math.sqrt(p * (p - l1) * (p - l2) * (p - l3));
     }
