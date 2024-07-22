@@ -20,16 +20,14 @@ public class Es1 {
         return s + n;
     }
 
-    public static String[] inserisciInArray(String[] array, String string) {
+    public static String[] inserisciInArray(String[] array, String newString) {
         if (array.length != 5) {
             throw new IllegalArgumentException("L'array deve contenere esattamente 5 elementi.");
         }
         String[] newArray = new String[array.length + 1];
         System.arraycopy(array, 0, newArray, 0, 5);
-        for (int i = newArray.length - 1; i > 3; i--) {
-            newArray[i] = newArray[i - 1];
-        }
-        newArray[3] = string;
+        for (int i = newArray.length - 1; i > 3; i--) newArray[i] = newArray[i - 1];
+        newArray[3] = newString;
 
         return newArray;
     }
